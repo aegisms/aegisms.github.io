@@ -87,7 +87,7 @@ $(document).ready(function () {
 const articleList = document.getElementById("articleList");
 
 if (articleList) {
-  fetch("https://dev.to/api/articles?username=ben&per_page=5")
+  fetch("https://dev.to/api/articles?username=ben&per_page=2")
     .then((response) => response.json())
     .then((articles) => {
       articles.forEach((article) => {
