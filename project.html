@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
   <header>
     <h1>Aegis M S</h1>
     <nav>
@@ -23,20 +22,33 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <article>
-    
-     
 
-    </article>
-    <article>
-      
+    <div class="project-display">
+      <img id="mainImage" src="project1.png" alt="Selected project" width="300">
+      <h3 id="mainTitle">Placement Prediction Model</h3>
+      <p id="mainDescription">Click a thumbnail below to see details about each project.</p>
+    </div>
 
-    </article>
+    <div class="thumbnails">
+      <img class="thumb"
+           src="project1.png"
+           data-title="Placement Prediction Model"
+           data-description="A machine learning model built during my internship at Spectrum Softech Solutions to predict student placement outcomes based on academic and skill data."
+           width="80">
+
+      <img class="thumb"
+           src="project2.png"
+           data-title="[Project Two Title]"
+           data-description="[Short description: what it does, technologies used, your role.]"
+           width="80">
+    </div>
   </section>
 
   <footer>
-    <p>&copy;  Aegis M S</p>
+    <p>&copy; Aegis M S</p>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
