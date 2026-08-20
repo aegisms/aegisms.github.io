@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
   <header>
     <h1>Aegis M S</h1>
     <nav>
@@ -24,12 +23,27 @@
   <section>
     <img src="profile1.jpeg" alt="Photo of Aegis M S" width="200">
     <h2>Hi, I'm Aegis M S</h2>
+    <p id="greeting"></p>
     <p>Welcome to my personal website. Browse through my profile, CV, education, and projects using the menu above.</p>
   </section>
 
+  <section id="articles">
+    <h2>My Articles</h2>
+    <ul id="articleList"></ul>
+  </section>
+
+  <section id="weather">
+    <h2>Live Weather</h2>
+    <input type="text" id="cityInput" placeholder="Enter city">
+    <button id="getWeatherBtn">Get Weather</button>
+    <div id="weatherResult"></div>
+  </section>
+
   <footer>
-    <p>&copy;  Aegis M S</p>
+    <p>&copy; Aegis M S</p>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
