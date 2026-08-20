@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
   <header>
     <h1>Aegis M S</h1>
     <nav>
@@ -23,17 +22,21 @@
 
   <section>
     <h2>Contact</h2>
-    <form>
+    <form id="contactForm">
       <label for="name">Name</label><br>
-      <input type="text" id="name" name="name" required><br>
+      <input type="text" id="name" name="name"><br>
+      <span id="nameError" class="error"></span>
 
       <label for="email">Email</label><br>
-      <input type="email" id="email" name="email" required><br>
+      <input type="email" id="email" name="email"><br>
+      <span id="emailError" class="error"></span>
 
       <label for="message">Message</label><br>
       <textarea id="message" name="message" rows="4"></textarea><br>
+      <span id="messageError" class="error"></span>
 
       <button type="submit">Send</button>
+      <p id="formSuccess"></p>
     </form>
 
     <p>Email: <a href="mailto:aegisms2005@gmail.com">aegisms2005@gmail.com</a></p>
@@ -49,5 +52,7 @@
     <p>&copy; Aegis M S</p>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
