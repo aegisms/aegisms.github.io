@@ -111,6 +111,96 @@ footer {
   margin-top: 2rem;
 }
 
+/* GREETING */
+#greeting {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+/* FORM VALIDATION ERRORS */
+.error {
+  color: red;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+#formSuccess {
+  margin-top: 0.8rem;
+  font-weight: bold;
+}
+
+/* PROJECTS GALLERY */
+.project-display {
+  margin-bottom: 1.5rem;
+}
+
+.project-display img {
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.thumb {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.thumb:hover {
+  border-color: #38bdf8;
+}
+
+/* ARTICLES */
+#articleList {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+#articleList li {
+  margin-bottom: 0.5rem;
+}
+
+#articleList a {
+  color: #0ea5e9;
+  text-decoration: none;
+}
+
+#articleList a:hover {
+  text-decoration: underline;
+}
+
+/* WEATHER */
+#weather input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+#weather button {
+  padding: 0.5rem 1rem;
+  background: #38bdf8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#weatherResult {
+  margin-top: 1rem;
+}
+
+#weatherResult img {
+  vertical-align: middle;
+}
+
 /* RESPONSIVE */
 @media (max-width: 600px) {
   header {
@@ -125,5 +215,15 @@ footer {
 
   #projects {
     flex-direction: column;
+  }
+
+  .thumbnails {
+    flex-wrap: wrap;
+  }
+
+  #weather input {
+    margin-bottom: 0.5rem;
+    display: block;
+    width: 100%;
   }
 }
